@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 50%;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.msg {
+  margin: 20px 0;
+}
+#Add {
+  width: 47%;
+  padding: 5px;
+  margin: 0;
+}
+.Submit {
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(56, 173, 173);
+  color: black;
+  font-weight: bold;
+}

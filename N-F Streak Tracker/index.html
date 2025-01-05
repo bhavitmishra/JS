@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>no Fap streaks</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="path/to/css/cal-heatmap.css" />
+<script type="text/javascript" src="path/to/cal-heatmap.min.js"></script>
+</head>
+<body>
+    <div id="cal-heatmap">
+        
+    </div>
+<script type="text/javascript">
+    var cal = new CalHeatMap();
+cal.init({
+  start: new Date(2000, 0), // January, 1st 2000
+  range: 12,
+  domain: "year",
+  subDomain: "month",
+  data: "http://localhost/api?start={{d:start}}&stop={{d:end}}"
+});
+
+/*
+  {{d:start}} === 2000-01-01T00:00:00Z
+  {{d:end}}   === 2000-12-31T23:59:59Z
+  => Fetch 12 months
+ */
+
+cal.next(); // Load January 2001
+
+/*
+  {{d:start}} === 2001-01-01T00:00:00Z
+  {{d:end}}   === 2001-01-31T23:59:59Z
+  => Fetch 1 month
+ */
+</script>
+</body>
+</html>
