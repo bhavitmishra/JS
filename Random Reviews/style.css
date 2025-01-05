@@ -1,0 +1,67 @@
+body {
+  background-color: #eaf5fa;
+}
+
+.header {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.title {
+  color: rgb(94, 79, 79);
+}
+hr {
+  width: 80px;
+  border: 3px, solid, #86dfff;
+}
+.card {
+  background-color: white;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.imgcontainer {
+  display: inline-block;
+  background-color: rgb(41, 170, 185);
+  border-radius: 50%;
+}
+#image {
+  border-radius: 50%;
+  padding: 3px;
+  width: 100%;
+  height: auto;
+}
+
+.arrows {
+  margin-top: 15px;
+}
+
+.larrow {
+  color: #86dfff;
+  font-size: 40px;
+  background-color: #fff;
+  border: none;
+}
+
+.rarrow {
+  color: #86dfff;
+  font-size: 40px;
+  background-color: #fff;
+  border: none;
+}
+
+.butcont {
+  margin-top: 15px;
+}
+.randarrow {
+  height: 50px;
+  width: auto;
+  margin-bottom: 20px;
+  color: #1a6f8e;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
